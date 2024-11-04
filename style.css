@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --bag-color: rgb(39 40 55);
+    --font-color: white;
+    --title-font-color: rgb(194, 3, 3);
+    --blue-container: rgb(135 206 235);
+    --mustard-container: rgb(255 165 0);
+    --red-container: rgb(248 39 39);
+    --h1-font-size: 7rem;
+    --h1-span-font-size: 20px;
+    --font-family: 'Oswald', sans-serif;
+    --letter-spacing: 0.4em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bag-color);
+    color: var(--font-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleIcon {
+    width: 23vw;
+    min-width: 8em;
+    flex-shrink: 0;
+}
+
+.h1_span {
+    font-size: var(--h1-span-font-size);
+    display: block;
+    letter-spacing: 1vw;
+    text-align: center;
+    color: var(--font-color);
+}
+
+h1 {
+    color: var(--title-font-color);
+    font-size: var(--h1-font-size);
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    letter-spacing: 2vw;
+    font-weight: 1000;
+    line-height: 1.1;
+    text-align: center;
+}
+
+/* main flex containers for each row */
+.row1_flexcontainer,
+.row2_flexcontainer,
+.row4_flexcontainer,
+.row5_flexcontainer,
+.row6_flexcontainer,
+.row7_flexcontainer {
+    margin: 0 13%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#row1_flexitem1 {
+    background-color: var(--mustard-container);
+}
+
+#row1_flexitem2 {
+    background-color: var(--blue-container);
+}
+
+.row1_flexcontainer>.flexitems {
+    padding: 2% 5% 1% 5%;
+    flex: 1;
+    text-align: center;
+}
+
+.row2_flexcontainer {
+    margin-top: 3%;
+    background-color: var(--red-container);
+    flex-wrap: wrap;
+}
+
+.row2_flexcontainer>.flexitems {
+    padding: 2% 2%;
+    /* flex: 1; */
+}
+
+#row2_flexitem1 {
+    flex: 1 1 50%;
+    font-family: var(--font-family);
+}
+
+#row2_flexitem2,
+#row2_flexitem3,
+#row2_flexitem4 {
+    flex: 1 1 10%;
+    font-family: var(--font-family);
+}
+
+#row2_flexitem5 {
+    flex: 1 1 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#row2_flexitem5 span {
+    font-family: var(--font-family);
+    text-decoration: underline;
+    font-size: 1.2em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.textStyle_row2 {
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: var(--font-family);
+}
+
+span.textStyle_row2 {
+    letter-spacing: 0.2em;
+}
+
+.row3_flexcontainer {
+    margin: 3% 13% 0% 13%;
+    background-color: var(--blue-container);
+    display: flex;
+    gap: 3em;
+}
+
+#row3_flexitem1 {
+    flex: 1 1 80%;
+    padding-bottom: 3%;
+}
+
+.row3_flexcontainer h2,
+.row4_flexcontainer h2 {
+    padding: 10px 0 0 10px;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    font-family: var(--font-family);
+    letter-spacing: 0.2em;
+}
+
+.row3_flexcontainer .flexitems {
+    font-size: 1.09em;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+}
+
+#row3_flexitem1 p,
+#row4_flexitem1 p {
+    padding-left: 30px;
+}
+
+#row3_flexitem2 {
+    padding-top: 60px;
+}
+
+.row4_flexcontainer,
+.row5_flexcontainer,
+.row6_flexcontainer,
+.row7_flexcontainer {
+    margin-top: 3%;
+}
+
+.row4_flexcontainer>.flexitems {
+    flex: 1;
+    padding-bottom: 1em;
+}
+
+#row4_flexitem1 {
+    background-color: var(--mustard-container);
+    background-image: url(Images/frenchfries.png);
+    background-size: 200px 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1em;
+    letter-spacing: 0.6em;
+    font-weight: 500;
+}
+
+#row4_flexitem1 p {
+    padding-top: 45px;
+}
+
+#row4_flexitem1 span {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#row4_flexitem2 {
+    background-color: var(--blue-container);
+    display: flex;
+}
+
+.row4_item2_image {
+    width: 13em;
+    flex: 1;
+}
+
+.row4_item2_text {
+    padding-left: 3%;
+    padding-top: 5%;
+    letter-spacing: 0.7em;
+    flex: 1;
+}
+
+.row4_item2_text>span {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.row5_flexcontainer .flexitems {
+    flex: 1;
+    background-color: var(--blue-container);
+}
+
+#row5_flexitem1,
+#row6_flexitem1 {
+    flex-basis: 63%;
+    padding: 15px 0 0 15px;
+}
+
+#row5_flexitem1>p,
+#row6_flexitem1>p,
+#row7_flexitem1 p {
+    font-size: 1.3em;
+    font-weight: 100;
+    letter-spacing: 0.3em;
+
+}
+
+/* .textStyle_row5[data-size="large"]{ */
+#row5_flexitem1 span,
+#row6_flexitem1 span,
+#row7_flexitem1 span {
+    font-size: 1.9em;
+    font-family: var(--font-family);
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+
+#row5_flexitem2>img,
+#row6_flexitem2>img {
+    width: 8em;
+    padding-top: 5px;
+}
+
+.row6_flexcontainer .flexitems {
+    flex: 1;
+    background-color: var(--mustard-container);
+}
+
+.row7_flexcontainer{
+    margin-bottom: 3%;
+}
+
+.row7_flexcontainer .flexitems {
+    flex: 1;
+}
+
+#row7_flexitem1 {
+    background-color: var(--mustard-container);
+    display: flex;
+    padding: 2% 0 0 2%;
+}
+
+#row7_flexitem1 .iconStyle {
+    font-size: 7rem;
+}
+
+#row7_flexitem2 {
+    background-color: var(--blue-container);
+    padding: 2% 0 0 2%;
+    flex: 1;
+}
+
+#row7_flexitem2 p {
+    font-size: 1.2em;
+}
+
+#row7_flexitem2 p .row7_flex2_span {
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.iconStyle {
+    color: black;
+    font-size: 2rem;
+    padding-right: 2%;
+}
+
+#row1_flexitem1>.iconStyle:nth-child(3) {
+    color: rgb(177, 6, 6);
+}
+
+.large-text-spacing {
+    font-size: 2.5em;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+}
+
+.paraText[data-spacing="row1_para1"] {
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.textStyle {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textStyle[data-size="large"] {
+    font-size: 1.7em;
+}
+
+/* Just tried the @media for responsive - this is just for my learning
+usage of code might not be correct */
+
+@media screen and (max-width: 800px) {
+
+    .row4_flexcontainer,
+    #row4_flexitem2 {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    :root {
+        --letter-spacing: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+        --h1-font-size: 32px;
+        --h1-span-font-size: 14px;
+        margin-bottom: 4%;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .paraText[data-spacing="row1_para1"] {
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+
+    .large-text-spacing {
+        font-size: 1.2em;
+        letter-spacing: 0.2rem;
+    }
+
+    .textStyle {
+        font-size: 0.8em;
+    }
+
+    .textStyle[data-size="large"] {
+        font-size: 0.8em;
+    }
+
+    #row2_flexitem5 {
+        font-size: 0.9em;
+    }
+
+    .textStyle_row2 {
+        font-size: 1em;
+    }
+
+    .row3_flexcontainer h2 {
+        padding: 10px 0 0 2px;
+        font-size: 1.3em;
+        letter-spacing: 0.3em;
+        font-family: var(--font-family);
+        letter-spacing: 0;
+    }
+
+    .row3_flexcontainer .flexitems {
+        font-size: 1em;
+        letter-spacing: 0.04em;
+    }
+}
